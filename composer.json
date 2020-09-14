@@ -3,13 +3,13 @@
     "type": "t2cms-theme",
     "description": "Standart design theme",
     "license": "MIT",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "koperdog",
             "email": "kopderdog.dev@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": { "startpl\\t2cms\\themes\\first\\": "" }

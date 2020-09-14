@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="categories_wrapper">
         <h2>Категории</h2>
         <?= yii\widgets\ListView::widget([
+            'options' => ['class' => 'page-list'],
             'dataProvider' => $categories,
             'itemView' => '_categories',
         ]);?>
@@ -25,13 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="pages_wrapper">
         <h2>Страницы</h2>
-        <div class="row">
-            <?= yii\widgets\ListView::widget([
-                'options' => ['class' => 'page-list'],
-                'dataProvider' => $pages,
-                'itemView' => '_pages',
-            ]);?>
-        </div>
+        <?= yii\widgets\ListView::widget([
+            'options' => ['class' => 'page-list'],
+            'dataProvider' => $pages,
+            'itemView' => '_pages',
+        ]);?>
     </div>
 
 </div>
